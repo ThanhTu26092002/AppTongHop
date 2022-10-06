@@ -10,8 +10,22 @@
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="11dp"
         android:onClick="BackToHome"
-        tools:layout_editor_absoluteX="13dp"
-        tools:layout_editor_absoluteY="11dp" />
+        android:text="Back To Home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="96dp"
+        android:text="The system is updating data, please come back later"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

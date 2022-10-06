@@ -59,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="68dp"
-        android:layout_marginBottom="428dp"
+        android:layout_marginBottom="440dp"
         android:text="Welcome Thanh Tu to ChillRelax"
         android:textSize="20dp"
         android:textStyle="bold|italic"
