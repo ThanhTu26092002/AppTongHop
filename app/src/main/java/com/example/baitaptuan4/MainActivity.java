@@ -8,7 +8,6 @@ import android.os.Handler;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 
@@ -19,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.main);
         edUserName = findViewById(R.id.edUserName);
         edPassword = findViewById(R.id.edPassword);
         btnLogin = findViewById(R.id.btnLogin);
@@ -69,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(MainActivity.this,DangKi.class));
+                startActivity(new Intent(MainActivity.this, Register.class));
             }
         },2000);
     }

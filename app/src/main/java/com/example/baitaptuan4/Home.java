@@ -12,14 +12,14 @@ public class Home extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.home);
     }
     public void listMusic(View view)
     {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(Home.this, listMusic.class));
+                startActivity(new Intent(Home.this, Movie.class));
             }
         }, 2000);
 
@@ -29,7 +29,7 @@ public class Home extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(Home.this, chat.class));
+                startActivity(new Intent(Home.this, Chat.class));
             }
         }, 2000);
 
@@ -39,7 +39,7 @@ public class Home extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(Home.this, thongbao.class));
+                startActivity(new Intent(Home.this, Newspaper.class));
             }
         }, 2000);
 
@@ -49,7 +49,7 @@ public class Home extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(Home.this, zingmp5.class));
+                startActivity(new Intent(Home.this, Music.class));
             }
         }, 2000);
 

@@ -7,19 +7,19 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
 
-public class chat extends AppCompatActivity {
+public class Movie extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat);
+        setContentView(R.layout.moive);
     }
     public void listMusic(View view)
     {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(chat.this, Home.class));
+                startActivity(new Intent(Movie.this, MainActivity.class));
             }
         }, 2000);
 
