@@ -128,16 +128,16 @@
         android:background="@null"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/thongbao" />
+        app:srcCompat="@drawable/dishhh" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="252dp"
-        android:layout_marginTop="692dp"
-        android:text="New Notification"
+        android:layout_marginStart="288dp"
+        android:layout_marginTop="688dp"
         android:background="@null"
+        android:text="Dish"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
