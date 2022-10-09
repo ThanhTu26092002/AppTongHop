@@ -46,7 +46,7 @@
         android:onClick="listMusic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/video" />
+        app:srcCompat="@drawable/profile" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -76,10 +76,9 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="84dp"
+        android:layout_marginStart="104dp"
         android:layout_marginTop="488dp"
-
-        android:text="Watch Movie"
+        android:text="Profile"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

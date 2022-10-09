@@ -19,7 +19,7 @@ public class Home extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(Home.this, Movie.class));
+                startActivity(new Intent(Home.this, Profile.class));
             }
         }, 2000);
 

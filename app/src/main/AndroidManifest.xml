@@ -23,7 +23,7 @@
             android:name=".Chat"
             android:exported="false" />
         <activity
-            android:name=".Movie"
+            android:name=".Profile"
             android:exported="false" />
         <activity
             android:name=".Register"
