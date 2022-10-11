@@ -6,23 +6,25 @@
     android:layout_height="match_parent"
     android:background="@drawable/gradient"
     tools:context=".Home">
+
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="230dp"
+        android:layout_height="250dp"
         android:layout_marginStart="85dp"
         android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="230dp"
         app:cardCornerRadius="50dp"
-        android:layout_height="250dp">
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:scaleType="centerCrop"
-        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        app:srcCompat="@drawable/me" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+
+            app:srcCompat="@drawable/me" />
     </androidx.cardview.widget.CardView>
-
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -123,8 +125,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="228dp"
         android:layout_marginTop="532dp"
-        android:onClick="thongbao"
         android:background="@null"
+        android:onClick="thongbao"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dishhh" />
@@ -140,4 +142,37 @@
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="750dp"
+        android:background="#E2AF93E1"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Địa chỉ: 48 Cao Thắng, Thăng Bình, Hải Châu, TP.Đà Nẵng" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Tel: 0905686868, số máy là 6666" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Email: chillrelax@gmail.com" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
