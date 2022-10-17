@@ -26,8 +26,7 @@ public class LishDish extends AppCompatActivity {
         lsvDish.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                XacNhanXoa(i);
-                Sua(i);
+                startActivity(new Intent(LishDish.this,ChiTiet.class));
             }
         });
         arr = new ArrayList<>();
@@ -59,48 +58,5 @@ public class LishDish extends AppCompatActivity {
         }, 2000);
 
     }
-    private void XacNhanXoa(int position){
-        AlertDialog.Builder alerDialog = new AlertDialog.Builder (this);
-        alerDialog.setTitle("Thông Báo!");
-        alerDialog.setMessage("Bạn Có Muốn Xóa Món Này Không?");
-        alerDialog.setPositiveButton("Có", new DialogInterface.OnClickListener() {
 
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-                arr.remove(position);
-                adapter.notifyDataSetChanged();
-            }
-        })
-        ;
-
-        alerDialog.setNegativeButton("Không", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-
-            }
-        });
-        alerDialog.setIcon(R.mipmap.ic_launcher);
-        alerDialog.show();
-    }
-    private void Sua(int position){
-        AlertDialog.Builder alerDialog = new AlertDialog.Builder (this);
-        alerDialog.setTitle("Thông Báo!");
-        alerDialog.setMessage("Bạn Có Muốn sửa Món Này Không?");
-        alerDialog.setPositiveButton("Có", new DialogInterface.OnClickListener() {
-
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-            }
-        })
-        ;
-
-        alerDialog.setNegativeButton("Không", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialogInterface, int i) {
-
-            }
-        });
-        alerDialog.setIcon(R.mipmap.ic_launcher);
-        alerDialog.show();
-    }
 }

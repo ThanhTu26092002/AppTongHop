@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".ChiTiet"
+    tools:layout_editor_absoluteX="-2dp"
+    tools:layout_editor_absoluteY="100dp">
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="262dp"
+        android:onClick="ChiTiet"
+        android:text="Back To Dish"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="401dp"
+        android:layout_height="234dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="75dp"
+        android:text="Món pizza xuất hiện tại nhiều quốc gia trên thế giới, nó được làm từ nguyên liệu chính là bột mì, kết hợp với những loại nguyên liệu khác, có màu sắc hấp dẫn và đặc biệt hương vị thơm ngon, bổ dưỡng. Pizza hiện đại ra đời vào năm 1889 khi nữ hoàng Margherita Teresa Giovanni, hoàng hậu của vua Umberto I của Ý đến thăm Napoli. Trên đường đi nữ hoàng ghé vào quán của Raffaele Esposito - chủ quán rượu Pietro Il Pizzaiolo, đã được yêu cầu chuẩn bị làm một món ăn đặc biệt để đón tiếp hoàng hậu. Esposito đã lên ý tưởng làm nên một món ăn với cà chua, pho mát mozzarella (một loại pho mát được làm từ sữa trâu) và húng quế, những thành phần đã tạo nên ba màu đỏ, trắng và xanh lá cây tượng trưng cho quốc kỳ Ý. Ông đã đặt tên cho chiếc pizza đó là Margherita."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="389dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="328dp"
+        android:text="- Nguyên liệu làm nhân bánh pizza: 60g sốt cà chua, 130g phô mai mozzarella bào sợi, 300g thịt bò (có thể thay thế bằng hải sản, xúc xích , gà, thịt xông khói…), 1 quả dứa, ớt chuông ngọt, hành tây, nấm... - Dụng cụ: Cán bánh, tô, đĩa, lò nướng (có thể thay thế bằng nồi chiên không dầu hoặc chảo)...."
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
